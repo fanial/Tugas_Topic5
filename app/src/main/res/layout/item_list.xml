@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="10dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="10dp">
+
+        <ImageView
+            android:id="@+id/img_rumahAdat"
+            android:layout_width="100dp"
+            android:layout_height="80dp"
+            android:layout_marginEnd="30dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="10dp"
+            />
+
+        <TextView
+            android:id="@+id/labelProv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Provinsi  :" />
+
+        <TextView
+            android:id="@+id/vProvinsi"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_toRightOf="@id/labelProv"
+            android:hint="Provinsi" />
+
+        <TextView
+            android:id="@+id/labelKota"
+            android:layout_below="@id/labelProv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Ibu Kota :"
+            />
+
+        <TextView
+            android:id="@+id/vKota"
+            android:layout_below="@id/vProvinsi"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_toRightOf="@id/labelKota"
+            android:hint="Ibu Kota" />
+
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>
